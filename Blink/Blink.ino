@@ -47,3 +47,4 @@ void loop() {
   digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
   delay(1000);                      // wait for a second
 }
+//All program logic was moved into setup() so it runs once at startup. I created an integer variable called timesToBlink starting at 1 and updated it using timesToBlink = timesToBlink + 6 * 7, giving 43. A while loop in setup() controls the LED blinking. Since timesToBlink never changes, the loop runs infinitely and later code is never reached.
